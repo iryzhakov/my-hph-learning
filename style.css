@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 25px;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.education_item1 {
+    min-height: 417px;
+    max-width: 639px;
+    padding: 2rem 3rem;
+    margin: 0 1rem 1rem 0;
+    border-radius: 8px;
+    border: 1px solid #E8E8E9;
+    box-shadow: 0 4px 40px rgba(188, 188, 188, 0.35);
+    background-color: #FFFFFF;
+}
+
+h2.title {
+    border-bottom: 1px solid rgba(0, 108, 131, 0.32);
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+}
+p.name, p.education-date {
+    font-family: Nunito-Sans;
+    font-size: 16px;
+    color: rgba(208, 45, 84, 1);
+}
+
+.name {
+    margin-bottom: 1rem;
+}
+
+.date {
+    margin-bottom: 2rem;
+}
+
+.text {
+    display: -webkit-box;
+    min-height: 6rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+ }
+
+.education-date {
+    padding-left: 20px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-image: url("imagine/fi_calendar.svg");
+}
+
+.button {
+    border-radius: 4px;
+    border: 1px solid #D01D54;
+    padding: 1rem 2rem;
+    min-width: 150px;
+    color: #F4F1EC;
+    background-color: #D01D54;
+}
+
+.button:hover {
+    color: #F4F1EC;
+    background: #B02647;
+}
+
+.button:active {
+    color: #F4F1EC;
+    background: #DC496C;
+}
+
+
+@media (max-width: 1200px) {
+    .education_item1 {
+        min-width: 290px;
+        margin-right: 0;
+    }
+    .date {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .education_item1 {
+        padding: 1.5rem 1rem;
+        font-size: 14px;
+    }
+    .name {
+        margin-bottom: 0.5rem;
+    }
+    h2.title {
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+    }
+    .date {
+        margin-bottom: 1.5rem;
+    }
+    .text {
+        -webkit-line-clamp: 5;
+    }
+
+;
+}
+

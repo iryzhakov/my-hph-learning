@@ -1,0 +1,42 @@
+@import "../../lib/bootstrap/scss/mixins/banner";
+@include bsBanner('custom for optimization google pagespeed = lighthous and for user');
+
+$include-column-box-sizing: true !default;
+
+@import "../../lib/bootstrap/scss/functions";
+@import "../../lib/bootstrap/scss/variables";
+@import "../../lib/bootstrap/scss/variables-dark";
+@import "../../lib/bootstrap/scss/maps";
+@import "../../lib/bootstrap/scss/mixins";
+@import "../../lib/bootstrap/scss/root";
+@import "../../lib/bootstrap/scss/reboot";
+
+@import "../../lib/bootstrap/scss/mixins/breakpoints";
+@import "../../lib/bootstrap/scss/mixins/container";
+@import "../../lib/bootstrap/scss/mixins/grid";
+@import "../../lib/bootstrap/scss/mixins/utilities";
+
+@import "../../lib/bootstrap/scss/vendor/rfs";
+
+@import "../../lib/bootstrap/scss/containers";
+@import "../../lib/bootstrap/scss/grid";
+
+@import "../../lib/bootstrap/scss/utilities";
+
+@import "../../lib/bootstrap/scss/modal";
+@import "../../lib/bootstrap/scss/close";
+
+// Only use the utilities we need
+// stylelint-disable-next-line scss/dollar-variable-default
+$utilities: map-get-multiple(
+    $utilities,
+        (
+            "display",
+            "flex-direction",
+            "flex-wrap",
+            "justify-content",
+            "align-items",
+        )
+);
+
+@import "../../lib/bootstrap/scss/utilities/api";
